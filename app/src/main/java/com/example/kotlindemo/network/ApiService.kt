@@ -1,4 +1,4 @@
-package com.example.kotlindemo.demo
+package com.example.kotlindemo.network
 
 import retrofit2.Call
 import retrofit2.http.GET

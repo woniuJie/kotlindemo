@@ -1,14 +1,12 @@
 package com.example.kotlindemo
 
 import android.content.Intent
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
-import com.example.kotlindemo.demo.DemoActivity
+import com.example.kotlindemo.network.DemoActivity
 import com.example.kotlindemo.dianzan.DianzanActivity
-import kotlin.math.log
+import com.example.kotlindemo.xiecheng.XieChengActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +24,11 @@ class MainActivity : AppCompatActivity() {
 
     fun onDianZanClick(view: View) {
         Intent(this, DianzanActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+    fun onXieCheng(view: View) {
+        Intent(this, XieChengActivity::class.java).run {
             startActivity(this)
         }
     }

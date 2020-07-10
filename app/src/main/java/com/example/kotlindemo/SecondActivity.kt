@@ -4,7 +4,6 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlindemo.test.coroutineScopeMain
 import kotlinx.android.synthetic.main.activity_second.*
 import kotlinx.coroutines.*
 import java.net.URL
@@ -30,6 +29,8 @@ class SecondActivity : AppCompatActivity() {
                 imageview3.setImageBitmap(bitmap3)
             }
         }
+
+
     }
 
     private suspend fun suspendingGetImage(): Bitmap? = withContext(Dispatchers.IO) {

@@ -1,10 +1,9 @@
-package com.example.kotlindemo.demo
+package com.example.kotlindemo.network
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.kotlindemo.R
-import com.example.kotlindemo.test.coroutineScopeMain
-import kotlinx.android.synthetic.main.activity_demo.*
 import kotlinx.coroutines.*
 import loge
 import retrofit2.Call
@@ -14,7 +13,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import top.jowanxu.wanandroidclient.bean.HomeListResponse
 import kotlin.concurrent.thread
-import kotlin.math.log
 
 class DemoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,8 +23,12 @@ class DemoActivity : AppCompatActivity() {
             initRetrofit()
         }
 
-        initRetrofitSu()
+        CoroutineScope(Dispatchers.Main).launch {
+            val result = xxx()
+            Log.e("TAG", "initRetrofit: $result")
+        }
     }
+
     fun initRetrofit(){
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
@@ -46,10 +48,9 @@ class DemoActivity : AppCompatActivity() {
                 loge("zsj","失败${t?.printStackTrace()}")
             }
         })
-
     }
 
-    fun initRetrofitSu(){
+    suspend fun xxx() : HomeListResponse {
         val retrofit = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl("https://www.wanandroid.com/")
@@ -57,12 +58,8 @@ class DemoActivity : AppCompatActivity() {
 
         val service = retrofit.create(ApiService::class.java)
 
-        GlobalScope.launch {
-            val result = withContext(Dispatchers.IO){
-                service.getHomeListSu()
-            }
-            loge("zsj","result-->${result}")
+        return withContext(Dispatchers.IO){
+            service.getHomeListSu()
         }
-
     }
 }
