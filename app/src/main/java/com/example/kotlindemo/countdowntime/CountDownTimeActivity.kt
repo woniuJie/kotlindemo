@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_count_down_time.*
 class CountDownTimeActivity : AppCompatActivity() {
 
     private var timer : CountDownTimer ?=null
-    private val startTime : Long = 400
+    private val startTime : Long = 4000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
