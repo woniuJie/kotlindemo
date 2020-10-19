@@ -1,5 +1,8 @@
 package top.jowanxu.wanandroidclient.bean
 
+import android.os.Parcelable
+import java.io.Serializable
+
 data class Datas(
     var id: Int,
     var originId: Int,
@@ -17,4 +20,4 @@ data class Datas(
     var niceDate: String,
     var courseId: Int,
     var collect: Boolean
-)
+):Serializable

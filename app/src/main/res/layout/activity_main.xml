@@ -28,5 +28,56 @@
         android:onClick="onXieCheng"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="毛玻璃"
+        android:onClick="onMaoBoLi"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="事件处理"
+        android:onClick="onEventClick"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="viewpager"
+        android:onClick="onViewPager"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AsyncLayoutInflate"
+        android:onClick="onAsync"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内存优化"
+        android:onClick="onOOMEvent"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bitmap"
+        android:onClick="onBitmap"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="倒计时"
+        android:onClick="onCustTimer"
+        />
+
 
 </LinearLayout>

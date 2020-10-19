@@ -11,6 +11,17 @@ import androidx.annotation.StringRes
 import kotlinx.coroutines.Deferred
 
 /**
+ * view
+ */
+inline fun View.onClick(crossinline block: () -> Unit) {
+    this.setOnClickListener(object : View.OnClickListener{
+        override fun onClick(p0: View?) {
+            block()
+        }
+    })
+}
+
+/**
  * Log
  */
 fun loge(tag: String, content: String?) {

@@ -4,8 +4,12 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_second.*
 import kotlinx.coroutines.*
+import onClick
+import top.jowanxu.wanandroidclient.bean.Data
+import top.jowanxu.wanandroidclient.bean.Datas
 import java.net.URL
 import javax.net.ssl.HttpsURLConnection
 class SecondActivity : AppCompatActivity() {
@@ -30,6 +34,32 @@ class SecondActivity : AppCompatActivity() {
             }
         }
 
+        val data = intent.getSerializableExtra("") as? Data
+
+        Log.e(TAG, "onCreate: 111" )
+
+        data.whenNull {
+            Log.e(TAG, "onCreate: 333" )
+            return
+        }
+
+        Log.e(TAG, "onCreate: 2222" )
+
+        data.whenNull {
+            finish()
+            return@whenNull
+        }
+
+
+
+        data?.let {
+        }
+
+        imageview1.onClick {
+
+        }
+
+//        isEmpty()
 
     }
 

@@ -1,5 +1,7 @@
 package top.jowanxu.wanandroidclient.bean
 
+import java.io.Serializable
+
 data class Data(
     var offset: Int,
     var size: Int,
@@ -8,4 +10,4 @@ data class Data(
     var curPage: Int,
     var over: Boolean,
     var datas: List<Datas>?
-)
+): Serializable

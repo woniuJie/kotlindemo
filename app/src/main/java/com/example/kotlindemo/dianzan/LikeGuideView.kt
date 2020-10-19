@@ -31,6 +31,8 @@ class LikeGuideView(context: Context) : ConstraintLayout(context) {
     //判断是否是连续的点击事件
     private val mHits = LongArray(2)
 
+    var aa = "";
+
     private var clickListener: OnDoubleClickListener? = null
 
     constructor(context: Context, attrs: AttributeSet) : this(context) {
@@ -45,6 +47,8 @@ class LikeGuideView(context: Context) : ConstraintLayout(context) {
         if (mHits[0] >= (SystemClock.uptimeMillis() - 500)) {
 
             clickListener?.onDoubleClick()
+
+            aa as Int
 
             var iv = ImageView(context)
 
