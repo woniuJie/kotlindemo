@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         loge("----${TextUtils.equals(xx?.str, "null")}")
         loge("----${xx?.str==null}")
 
-        loge("xxxyyy")
+        loge("xxxyyy1")
 
         val r_name3 = "https://img2.soyoung.com/tieba/ios/post/20200629/2/108d391524db8f42839644be34de95ac_540_718.jpg"
         val pattern: Pattern = Pattern.compile("_\\d+_\\d+")
