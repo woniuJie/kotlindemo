@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".edittext.EditTextActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#333333"
+        android:textSize="13dp"
+        android:text="张士杰哈哈哈哈 正常的"
+        android:maxLines="2"
+        />
+
+    <TextView
+        android:id="@+id/tv_bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#333333"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        android:text="张士杰哈哈哈哈 bold"
+        android:maxLines="2"
+        />
+
+    <TextView
+        android:id="@+id/tv_zhengchang_fake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#333333"
+        android:textSize="13dp"
+        android:text="张士杰哈哈哈哈 fakeStyle"
+        android:maxLines="2"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_stroke_fake"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#333333"
+        android:textSize="13dp"
+        android:text="张士杰哈哈哈哈 strokewidth"
+        android:maxLines="2"
+        />
+
+
+    <com.example.kotlindemo.edittext.MyTextView
+        android:id="@+id/tv_mytext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:lineSpacingMultiplier="1.1"
+        android:textColor="#333333"
+        android:textSize="13dp"
+        android:text="张士杰哈哈哈哈 自定义view"
+        android:maxLines="2"
+        />
+
+
+    
+
+</LinearLayout>

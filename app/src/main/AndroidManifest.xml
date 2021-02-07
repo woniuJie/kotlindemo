@@ -7,14 +7,18 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".countdowntime.CountDownTimeActivity"
-            android:hardwareAccelerated="true"></activity>
+        <activity android:name=".edittext.EditTextActivity"></activity>
+        <activity android:name=".click.ClickActivity" />
+        <activity android:name=".pile.PileActivity" />
+        <activity
+            android:name=".countdowntime.CountDownTimeActivity"
+            android:hardwareAccelerated="true" />
         <activity android:name=".glide.GlideActivity" />
         <activity android:name=".oom.OOMActivity" />
         <activity android:name=".async.AsyncActivity" />

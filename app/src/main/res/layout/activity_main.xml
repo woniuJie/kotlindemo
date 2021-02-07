@@ -79,5 +79,28 @@
         android:onClick="onCustTimer"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="重叠imageview"
+        android:onClick="onPipleView"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拍照"
+        android:onClick="onPaizhaoView"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="软键盘"
+        android:onClick="onEditTextClick"
+        />
+
 
 </LinearLayout>

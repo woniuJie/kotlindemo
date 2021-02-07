@@ -7,13 +7,16 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlindemo.async.AsyncActivity
+import com.example.kotlindemo.click.ClickActivity
 import com.example.kotlindemo.countdowntime.CountDownTimeActivity
 import com.example.kotlindemo.dianzan.DianzanActivity
+import com.example.kotlindemo.edittext.EditTextActivity
 import com.example.kotlindemo.event.EventActivity
 import com.example.kotlindemo.glide.GlideActivity
 import com.example.kotlindemo.maoboli.MaoBoLiActivity
 import com.example.kotlindemo.network.DemoActivity
 import com.example.kotlindemo.oom.OOMActivity
+import com.example.kotlindemo.pile.PileActivity
 import com.example.kotlindemo.viewpager.ViewPagerActivity
 import java.math.BigDecimal
 import java.text.DecimalFormat
@@ -142,6 +145,22 @@ class MainActivity : AppCompatActivity() {
 
     fun onCustTimer(view: View) {
         Intent(this, CountDownTimeActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+    fun onPipleView(view: View) {
+        Intent(this, PileActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+
+    fun onPaizhaoView(view: View) {
+        Intent(this, ClickActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+    fun onEditTextClick(view: View) {
+        Intent(this, EditTextActivity::class.java).run {
             startActivity(this)
         }
     }
