@@ -18,6 +18,7 @@ import com.example.kotlindemo.network.DemoActivity
 import com.example.kotlindemo.oom.OOMActivity
 import com.example.kotlindemo.pile.PileActivity
 import com.example.kotlindemo.viewpager.ViewPagerActivity
+import com.example.myaarlibrary.AarActivity
 import java.math.BigDecimal
 import java.text.DecimalFormat
 import java.util.*
@@ -34,20 +35,21 @@ class MainActivity : AppCompatActivity() {
         Log.e("zsj", "onCreate: ${null == false}")
         Log.e(TAG, "onCreate: --[${xx?.str}]----")
         loge("----${TextUtils.equals(xx?.str, "null")}")
-        loge("----${xx?.str==null}")
+        loge("----${xx?.str == null}")
 
         loge("xxxyyy1")
 
-        val r_name3 = "https://img2.soyoung.com/tieba/ios/post/20200629/2/108d391524db8f42839644be34de95ac_540_718.jpg"
+        val r_name3 =
+            "https://img2.soyoung.com/tieba/ios/post/20200629/2/108d391524db8f42839644be34de95ac_540_718.jpg"
         val pattern: Pattern = Pattern.compile("_\\d+_\\d+")
         val matcher: Matcher = pattern.matcher(r_name3)
-        Log.e("zsj", "onCreate: ${matcher.replaceAll("").trim()}" )
+        Log.e("zsj", "onCreate: ${matcher.replaceAll("").trim()}")
 
 
         val pattern1: Pattern = Pattern.compile("_\\d+")
         val matcher1: Matcher = pattern1.matcher(r_name3)
 
-        while (matcher1.find()){
+        while (matcher1.find()) {
             Log.e("zsj", "onCreate: ${matcher1.group()}")
         }
 
@@ -61,7 +63,7 @@ class MainActivity : AppCompatActivity() {
     private fun getUrlWAndHScale(url: String): String {
         var scale = 0.0
         var scaleStr = ""
-        var result=0.0
+        var result = 0.0
         try {
             val pattern = Pattern.compile("_\\d+")
             val matcher = pattern.matcher(url)
@@ -83,7 +85,6 @@ class MainActivity : AppCompatActivity() {
 
             scaleStr = DecimalFormat("#.00").format(scale)
 //            scaleStr = String.format("%.2f", scale)
-
 
 
         } catch (e: Exception) {
@@ -150,6 +151,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(this)
         }
     }
+
     fun onPipleView(view: View) {
         Intent(this, PileActivity::class.java).run {
             startActivity(this)
@@ -161,8 +163,15 @@ class MainActivity : AppCompatActivity() {
             startActivity(this)
         }
     }
+
     fun onEditTextClick(view: View) {
         Intent(this, EditTextActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+
+    fun onAarTrunClick(view: View) {
+        Intent(this, AarActivity::class.java).run {
             startActivity(this)
         }
     }

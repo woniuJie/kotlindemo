@@ -102,5 +102,12 @@
         android:onClick="onEditTextClick"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="aar跳转"
+        android:onClick="onAarTrunClick"
+        />
+
 
 </LinearLayout>
