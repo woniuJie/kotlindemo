@@ -13,7 +13,7 @@ private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
 /**
- * A simple [Fragment] subclass.
+ * Animal simple [Fragment] subclass.
  * Use the [BlankFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
@@ -45,7 +45,7 @@ class BlankFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment BlankFragment.
+         * @return Animal new instance of fragment BlankFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic

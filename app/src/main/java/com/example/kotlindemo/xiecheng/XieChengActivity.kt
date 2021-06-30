@@ -40,11 +40,6 @@ class XieChengActivity : AppCompatActivity() {
 
         }
 
-
-
-
-
-
         coroutineScopeMain.launch {
             val bitmap = ViewModel.getImage()
             iv_xiecheng.setImageBitmap(bitmap)
@@ -98,12 +93,27 @@ class XieChengActivity : AppCompatActivity() {
             print(u)
 
         }
+
+        coroutineScopeMain.launch {
+            val a = async { add(1,2) }
+            val b = async { add(2,3) }
+            val c = a.await()+b.await()
+            Log.e(TAG, "onCreate: async---${c}" )
+        }
+
+    }
+
+    suspend fun add(a: Int, b: Int): Int {
+        return withContext(Dispatchers.IO){
+            delay(2000)
+            return@withContext a+b
+        }
     }
 
 
     suspend fun aa() {
         withContext(Dispatchers.IO) {
-            Log.e(TAG, "aa: aaaaaaaa" )
+            Log.e(TAG, "aa: aaaaaaaa")
             delay(1000)
         }
     }
@@ -111,7 +121,7 @@ class XieChengActivity : AppCompatActivity() {
 
     suspend fun bb() {
         withContext(Dispatchers.IO) {
-            Log.e(TAG, "b: bbbbbb" )
+            Log.e(TAG, "b: bbbbbb")
             delay(10000)
         }
     }

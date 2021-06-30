@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#44aa11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ll_username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/name_icon"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="我是一饿饿讷饿饿饿讷饿饿讷个饿讷个饿饿讷" />
+
+        <ImageView
+            android:id="@+id/name_icon"
+            android:layout_width="40dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/userName"
+            app:layout_constraintEnd_toStartOf="@id/iv_consultant_card"
+            app:layout_constraintStart_toEndOf="@+id/userName"
+            app:layout_constraintTop_toTopOf="@+id/userName"
+            tools:background="#664485"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/iv_consultant_card"
+            android:layout_width="40dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/name_icon"
+            app:layout_constraintTop_toTopOf="@+id/userName"
+            tools:background="#99aa11"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

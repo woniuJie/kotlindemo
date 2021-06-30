@@ -13,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".edittext.EditTextActivity"></activity>
+        <activity android:name=".spannable.SpannableStringActivity"></activity>
+        <activity android:name=".zhengze.ZhengZeActivity" />
+        <activity android:name=".xiecheng.XieCheng2Activity" />
+        <activity android:name=".extend.MyActivity" />
+        <activity android:name=".extend.GaoJieActivity" />
+        <activity android:name=".edittext.EditTextActivity" />
         <activity android:name=".click.ClickActivity" />
         <activity android:name=".pile.PileActivity" />
         <activity

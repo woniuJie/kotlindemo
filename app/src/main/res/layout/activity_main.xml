@@ -7,107 +7,140 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="协程网络请求"
-        android:onClick="onCorClick"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="双击点赞"
-        android:onClick="onDianZanClick"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="协程练习"
-        android:onClick="onXieCheng"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="毛玻璃"
-        android:onClick="onMaoBoLi"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="事件处理"
-        android:onClick="onEventClick"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="viewpager"
-        android:onClick="onViewPager"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AsyncLayoutInflate"
-        android:onClick="onAsync"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="内存优化"
-        android:onClick="onOOMEvent"
-        />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="bitmap"
-        android:onClick="onBitmap"
-        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="正则表达式"
+                android:onClick="onZhengZe"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="spannable"
+                android:onClick="onSpannable"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="协程网络请求"
+                android:onClick="onCorClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="双击点赞"
+                android:onClick="onDianZanClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="协程练习"
+                android:onClick="onXieCheng"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="毛玻璃"
+                android:onClick="onMaoBoLi"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="事件处理"
+                android:onClick="onEventClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="viewpager"
+                android:onClick="onViewPager"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AsyncLayoutInflate"
+                android:onClick="onAsync"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="内存优化"
+                android:onClick="onOOMEvent"
+                />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="倒计时"
-        android:onClick="onCustTimer"
-        />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="重叠imageview"
-        android:onClick="onPipleView"
-        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="bitmap"
+                android:onClick="onBitmap"
+                />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="拍照"
-        android:onClick="onPaizhaoView"
-        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="倒计时"
+                android:onClick="onCustTimer"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="重叠imageview"
+                android:onClick="onPipleView"
+                />
 
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="软键盘"
-        android:onClick="onEditTextClick"
-        />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="拍照"
+                android:onClick="onPaizhaoView"
+                />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="aar跳转"
-        android:onClick="onAarTrunClick"
-        />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="软键盘"
+                android:onClick="onEditTextClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="aar跳转"
+                android:onClick="onAarTrunClick"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="kotlin高阶"
+                android:onClick="onGaoJie"
+                />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
