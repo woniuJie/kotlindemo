@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kotlindemo.transitionname.BeautyGestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gesturelayout_rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transitionname.TransitionBActivity">
+
+    <ImageView
+        android:id="@+id/iv_transition_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="activitytransition"
+        />
+
+    <TextView
+        android:id="@+id/tv_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_transition_b"
+        android:text="阿迪开发阿迪开阿迪开发阿迪开发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发阿迪开发阿迪开发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户阿迪开发阿迪开发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发阿迪开发阿迪开发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户阿迪开发阿迪开发客阿迪开发阿迪开发客户阿阿迪开发阿迪开发客阿迪开发阿迪开发客户阿迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户迪开发客户阿迪开发客户阿迪开发客户客户户阿迪开发客户阿迪开发客户阿迪开发客户客户"
+        />
+
+
+</com.example.kotlindemo.transitionname.BeautyGestureLayout>

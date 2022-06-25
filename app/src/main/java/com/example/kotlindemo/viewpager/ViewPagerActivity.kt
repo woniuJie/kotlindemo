@@ -3,10 +3,13 @@ package com.example.kotlindemo.viewpager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
 import com.example.kotlindemo.R
+import com.example.kotlindemo.spannable.ImageParamsCheckUtils
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_view_pager.*
 import kotlinx.android.synthetic.main.activity_view_pager.view.*
+import kotlinx.android.synthetic.main.fragment_blank.*
 
 class ViewPagerActivity : AppCompatActivity() {
 
@@ -35,7 +38,11 @@ class ViewPagerActivity : AppCompatActivity() {
         viewpager.offscreenPageLimit = 3
         viewpager.setPageTransformer(true, scaleTransforer)
 
+        val url = "https://www.baidu.com/img/bd_logo1.png"
+        Glide.with(this).load(url)
+            .into(iv_viewpager)
 
+        ImageParamsCheckUtils.findAllImageParamsIsWrap(this,this.window.decorView,R.layout.activity_view_pager)
 
     }
 }

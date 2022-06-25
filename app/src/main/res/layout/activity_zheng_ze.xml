@@ -4,6 +4,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0011AA"
     tools:context=".zhengze.ZhengZeActivity">
+
+
+    <com.example.kotlindemo.zhengze.CommunityVoteProgressView
+        android:id="@+id/community_vote_progress_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+<!--    <com.example.kotlindemo.zhengze.SongLyricTextView-->
+<!--        android:id="@+id/tv_song"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingTop="6dp"-->
+<!--        android:paddingLeft="5dp"-->
+<!--        android:paddingBottom="6dp"-->
+<!--        android:visibility="gone"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#AAABB3"-->
+<!--        />-->
+
+<!--    <com.example.kotlindemo.zhengze.SongLyricTextView2-->
+<!--        android:id="@+id/tv_song2"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:paddingTop="6dp"-->
+<!--        android:paddingLeft="5dp"-->
+<!--        android:paddingBottom="6dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        />-->
+
+<!--    <com.example.kotlindemo.zhengze.SongLyricTextView1-->
+<!--        android:id="@+id/tv_song1"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginBottom="6dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:textColor="#AAABB3"-->
+<!--        />-->
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

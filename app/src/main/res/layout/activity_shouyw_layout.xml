@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/space_bottom_line"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll"
+                app:titleEnabled="false">
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="阿斯顿看阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒阿斯顿看了空间卡阿斯顿看阿斯顿看了空间卡阿斯顿看了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康了空间卡换房间卡就开始地方喝酒啊肯定是符合健康换房间卡就开始地方喝酒啊肯定是符合健康" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            <com.soyoung.component_widget.SyTextView
+                android:id="@+id/tabView2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="是的  是的  是的  是的  是的  是的  是的  是的  是的  是的 "
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                >
+
+            </com.soyoung.component_widget.SyTextView>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_zzz"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <View
+        android:id="@+id/space_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

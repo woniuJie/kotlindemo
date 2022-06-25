@@ -25,5 +25,8 @@ class EventActivity : AppCompatActivity() {
             Log.e("zsj", "onCreate: 上层" )
         }
 
+        rel_z.onClick {
+            Log.e("zsj", "onCreate: 父亲")
+        }
     }
 }

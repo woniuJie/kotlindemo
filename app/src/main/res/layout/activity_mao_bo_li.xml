@@ -5,18 +5,29 @@
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/yy"
     tools:context=".maoboli.MaoBoLiActivity">
 
-    <io.alterac.blurkit.BlurLayout
-        android:id="@+id/blurLayout"
+
+
+    <ImageView
+        android:id="@+id/iv_img"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        app:blk_blurRadius="15"
-        app:blk_downscaleFactor="0.1"
-        app:blk_fps="60"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    <com.example.kotlindemo.maoboli.blur.RealtimeBlurView-->
+<!--        android:id="@+id/blurLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/iv_img"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/iv_img"-->
+<!--        app:layout_constraintStart_toStartOf="@id/iv_img"-->
+<!--        app:realtimeBlurRadius="45dp"-->
+<!--        app:realtimeOverlayColor="#99000000" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

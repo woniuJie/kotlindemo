@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kotlindemo.flexible.flexible.FlexibleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/flexible_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/root_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="302dp"
+                    android:background="@drawable/medical_bg_main"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="161dp"
+                    android:layout_height="43dp"
+                    android:layout_marginTop="108dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="@id/iv_logo"
+                    app:layout_constraintStart_toStartOf="@id/iv_logo"
+                    app:layout_constraintTop_toBottomOf="@id/iv_logo"
+                    tools:text="查医美资质，就来医美查" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="198dp"
+                    android:layout_marginEnd="94dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/ed_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@null"
+                        android:hint="查机构/医生/品牌"
+                        android:textSize="15dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        app:layout_constraintEnd_toStartOf="@id/tv_search_bt"
+                        app:layout_constraintStart_toEndOf="@id/iv_search" />
+
+                    <TextView
+                        android:id="@+id/tv_search_bt"
+                        android:layout_width="74dp"
+                        android:layout_height="31dp"
+                        android:layout_marginEnd="6dp"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="搜索"
+                        android:textSize="15dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_scan"
+                    android:layout_width="74dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="@id/cl_edit"
+                    app:layout_constraintStart_toEndOf="@id/cl_edit"
+                    app:layout_constraintTop_toTopOf="@id/cl_edit">
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_hot_word"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/cl_edit">
+
+                    <TextView
+                        android:id="@+id/tv_hot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门搜索词："
+                        android:textSize="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/header"
+                    android:text="阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复阿迪看哈阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间空间阿迪看哈都快回复空间阿迪看哈都快回复空间阿迪看哈都快回复空间都快回复空间"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/status_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/topBackground"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:alpha="0"
+            app:layout_constraintTop_toBottomOf="@id/status_bar" />
+
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_bar" />
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="centerInside"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/status_bar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.example.kotlindemo.flexible.flexible.FlexibleLayout>
+

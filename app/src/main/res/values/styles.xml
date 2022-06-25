@@ -13,4 +13,50 @@
     </declare-styleable>
 
 
+
+    <declare-styleable name="AmoyTicketView">
+        <attr name="childNum" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="BlurLayout">
+        <attr format="float" name="blk_downscaleFactor"/>
+        <attr format="integer" name="blk_blurRadius"/>
+        <attr format="integer" name="blk_fps"/>
+        <attr format="dimension" name="blk_cornerRadius"/>
+        <attr format="float" name="blk_alpha"/>
+    </declare-styleable>
+
+    <declare-styleable name="RealtimeBlurView">
+        <attr format="dimension" name="realtimeBlurRadius"/>
+        <attr format="float" name="realtimeDownsampleFactor"/>
+        <attr format="color" name="realtimeOverlayColor"/>
+    </declare-styleable>
+
+    <style name="ActivityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/dialog_show</item>
+        <item name="android:activityOpenExitAnimation">@anim/dialog_dismiss</item>
+<!--        <item name="android:activityCloseExitAnimation">@anim/x_slide_out_right</item>-->
+<!--        <item name="android:activityCloseEnterAnimation">@anim/x_slide_in_left</item>-->
+    </style>
+
+    <style name="Theme.Transparent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="Theme.Transparent.DouYIn" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/ActivityAnimation</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
 </resources>

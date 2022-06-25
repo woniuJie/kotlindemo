@@ -24,3 +24,8 @@ fun getScreenHeight(context: Context): Int {
     manager.defaultDisplay.getMetrics(outMetrics)
     return outMetrics.heightPixels
 }
+fun dp2px(context: Context, dpValue: Float): Int {
+    var context = context
+    val scale = context.resources.displayMetrics.density
+    return (dpValue * scale + 0.5f).toInt()
+}

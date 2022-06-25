@@ -1,5 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/shape_item_post_video_hot.xml" value="0.2916666666666667" />
+        <entry key="app/src/main/res/drawable/shape_item_post_video_hot_select.xml" value="0.30648148148148147" />
+        <entry key="app/src/main/res/drawable/shape_new_user_progress_bg.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/white_pure_top_radius8_bg.xml" value="0.3071794871794872" />
+        <entry key="app/src/main/res/layout/activity_async.xml" value="0.1281661600810537" />
+        <entry key="app/src/main/res/layout/activity_bring_to_front_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_dialog_layout.xml" value="0.21422101449275363" />
+        <entry key="app/src/main/res/layout/activity_douyin_aactivity.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_douyin_bactivity.xml" value="0.19895833333333332" />
+        <entry key="app/src/main/res/layout/activity_event.xml" value="0.2169230769230769" />
+        <entry key="app/src/main/res/layout/activity_indicator_demo_layout.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_lifecycler_layout.xml" value="0.1609375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.11499493414387031" />
+        <entry key="app/src/main/res/layout/activity_mao_bo_li.xml" value="0.3514689880304679" />
+        <entry key="app/src/main/res/layout/activity_my_test_a_layout.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_my_test_b_layout.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_o_o_m.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_pile.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/activity_pull_demo1.xml" value="0.17850525015441632" />
+        <entry key="app/src/main/res/layout/activity_rxjava_demo_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_second.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/activity_shouyw_layout.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_spannable_string.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/activity_tou_xiang_lun_bo.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_touch_event_layout.xml" value="0.2743589743589744" />
+        <entry key="app/src/main/res/layout/activity_transition_aactivity.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_transition_bactivity.xml" value="0.19076923076923077" />
+        <entry key="app/src/main/res/layout/activity_view_demo_layout.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.17798913043478262" />
+        <entry key="app/src/main/res/layout/activity_viewpager2_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_weiyi_layout.xml" value="0.25729166666666664" />
+        <entry key="app/src/main/res/layout/activity_xie_cheng.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/activity_xie_cheng2.xml" value="0.14635416666666667" />
+        <entry key="app/src/main/res/layout/activity_zheng_ze.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/circle_layout.xml" value="0.17798913043478262" />
+        <entry key="app/src/main/res/layout/community_vote_progress_layout.xml" value="0.192481884057971" />
+        <entry key="app/src/main/res/layout/fragment_blank.xml" value="0.1281661600810537" />
+        <entry key="app/src/main/res/layout/fragment_blank2.xml" value="0.17798913043478262" />
+        <entry key="app/src/main/res/layout/fragment_blank_rest.xml" value="0.2246376811594203" />
+        <entry key="app/src/main/res/layout/fragment_shouye_layout.xml" value="0.2015625" />
+        <entry key="app/src/main/res/layout/include_oom_layout.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/item_hhh.xml" value="0.20364583333333333" />
+        <entry key="app/src/main/res/layout/item_post_video_hot_indicator_layout.xml" value="1.0" />
+        <entry key="app/src/main/res/layout/item_progress_layout.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/item_viewpager_layout.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/layout_multi_tab_item.xml" value="0.2578125" />
+        <entry key="app/src/main/res/layout/medical_activity_main.xml" value="0.23324275362318841" />
+        <entry key="app/src/main/res/layout/post_video_hot_indicator_view_layout.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/view_constaint_layout.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/view_constaint_layout111.xml" value="0.22083333333333333" />
+        <entry key="app/src/main/res/layout/view_dialog_zsj_layout.xml" value="0.21422101449275363" />
+        <entry key="app/src/main/res/layout/view_header_layout.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/view_header_layout1.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

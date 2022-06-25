@@ -13,7 +13,45 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".spannable.SpannableStringActivity"></activity>
+        <activity
+            android:name=".transitionname.TransitionBActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            />
+        <activity
+            android:name=".transitionname.TransitionAActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+        <activity android:name=".transitionname.DouYinAActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+        <activity android:name=".transitionname.DouYinBActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent.DouYIn"/>
+
+        <activity android:name=".transitionname.MyTestAActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+
+        <activity android:name=".transitionname.MyTestBActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"/>
+
+
+        <activity android:name=".touxiang.TouXiangLunBoActivity" />
+        <activity android:name=".spannable.SpannableStringActivity" />
         <activity android:name=".zhengze.ZhengZeActivity" />
         <activity android:name=".xiecheng.XieCheng2Activity" />
         <activity android:name=".extend.MyActivity" />
@@ -35,6 +73,8 @@
         <activity android:name=".network.DemoActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".FirstActivity" />
+        <activity android:name=".flexible.PullDemo1Activity" />
+        <activity android:name=".shouye.WeiYiActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,6 +82,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".bringtofront.BringToFrontActivity"/>
+        <activity android:name=".bringtofront.LineRightActivity"/>
+        <activity android:name=".view.ViewDemoActivity"/>
+        <activity android:name=".touchevent.TouchEventActivity"/>
+        <activity android:name=".lifecycler.LifeCyclerDemoActitivy"/>
+        <activity android:name=".rxjava.RxJavaDemoActitivy"/>
+        <activity android:name=".indicator.IndicatorDemoActivity"/>
+
     </application>
 
 </manifest>

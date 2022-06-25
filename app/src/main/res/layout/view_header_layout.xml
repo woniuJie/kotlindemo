@@ -23,7 +23,7 @@
         android:ellipsize="end"
         android:maxWidth="230dp"
         android:singleLine="true"
-        android:text="我是失色是舒是失色是舒阿kjhd是失色是舒阿kjhd阿kjhdaf斯"
+        android:text="我是舒阿kjhd阿kjhdaf斯"
         app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
         app:layout_constraintLeft_toRightOf="@+id/iv_icon"
         app:layout_constraintTop_toTopOf="@+id/iv_icon" />

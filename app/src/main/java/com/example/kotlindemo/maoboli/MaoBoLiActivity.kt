@@ -1,9 +1,25 @@
 package com.example.kotlindemo.maoboli
 
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.load.resource.bitmap.CenterCrop
+import com.bumptech.glide.request.target.SimpleTarget
+import com.bumptech.glide.request.transition.Transition
 import com.example.kotlindemo.R
+import com.example.kotlindemo.loge
+import jp.wasabeef.blurry.Blurry
 import kotlinx.android.synthetic.main.activity_mao_bo_li.*
+import java.lang.StringBuilder
 
 
 class MaoBoLiActivity : AppCompatActivity() {
@@ -13,32 +29,23 @@ class MaoBoLiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mao_bo_li)
 
-//        button_mao.onClick {
-//            Blurry.with(this)
-//                .radius(25)
-//                .sampling(1)
-//                .async()
-//                .capture(findViewById(R.id.iv_left))
-//                .into(findViewById(R.id.iv_left))
-//
-//
-//            Blurry.with(this)
-//                .radius(25)
-//                .sampling(1)
-//                .color(Color.argb(66, 255, 255, 0))
-//                .async()
-//                .onto(findViewById<View>(R.id.ll_mao) as ViewGroup)
+        Glide.with(this)
+            .asBitmap()
+            .load("https://img2.soyoung.com/user/20220118/4/29155181295c6f5ee2b51c5ed6c1ffea_100_100.jpg")
+            .into(object : SimpleTarget<Bitmap?>() {
+                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap?>?) {
+                    Blurry.with(this@MaoBoLiActivity)
+                        .sampling(2)
+                        .radius(4)
+                        .async()
+                        .color(Color.parseColor("#99000000"))
+                        .from(resource)
+                        .into(iv_img)
+                }
+            })
+
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        blurLayout.startBlur()
-    }
 
-    override fun onStop() {
-        blurLayout.pauseBlur()
-
-        super.onStop()
-    }
 }

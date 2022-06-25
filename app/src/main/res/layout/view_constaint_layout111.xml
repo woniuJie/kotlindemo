@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#f0f"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/view_2"
+        />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#ff0"
+        app:layout_constraintStart_toEndOf="@id/view_1"
+        app:layout_constraintEnd_toStartOf="@id/view_3"
+        />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="#0ff"
+        app:layout_constraintStart_toEndOf="@id/view_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/userName"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ellipsize="end"-->
+<!--        android:maxLines="1"-->
+<!--        android:singleLine="true"-->
+<!--        android:textColor="#333333"-->
+<!--        android:textSize="16dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constrainedWidth="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toStartOf="@id/iv_consultant_card"-->
+<!--        app:layout_constraintHorizontal_bias="0"-->
+<!--        app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:text="我是一饿饿我是一饿饿讷个饿饿饿讷我是一饿饿讷个饿饿饿讷讷个饿饿饿讷" />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

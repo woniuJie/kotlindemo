@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/front_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:text="阿三开的减肥哈看士杰地方哈空间的身份"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#f0f"
+        android:gravity="center"
+        android:text="zsj"
+        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ff0"
+        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#3399dd"
+        app:layout_constraintTop_toBottomOf="@id/view_3" />
+
+
+    <TextView
+        android:id="@+id/tv_title_xxxx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="撒到了开发绿色的房间"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_4"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

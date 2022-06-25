@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    tools:context=".transitionname.TransitionAActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_douyin_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:transitionName="activitytransition"
+        />
+
+    <View
+        android:id="@+id/view_21"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#ff4455"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:id="@+id/view_22"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#ff4455"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/view_21"
+        android:layout_marginEnd="20dp"
+        />
+
+    <View
+        android:id="@+id/view_23"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#ff4455"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_22"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我叫张士杰"
+        android:textColor="#4f4"
+        app:layout_constraintBottom_toTopOf="@id/view_1"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/view_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4f4"
+        android:text="阿迪开始发快递就是发觉可视阿迪开始发快递就是发觉可视电话封口机阿阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划萨德护肤科技哈电视开机哈到付款计划电话封口机阿阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划阿迪开始发快递就是发觉可视电话封口机阿萨德护肤科技哈电视开机哈到付款计划萨德护肤科技哈电视开机哈到付款计划"
+        />
+
+    <TextView
+        android:id="@+id/tv_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:includeFontPadding="false"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="阿斯顿发发阿斯顿发阿斯顿发发阿斯顿发发阿阿斯顿发发阿斯顿发发阿斯顿发发阿斯顿发发斯顿发发阿斯顿发发发阿阿斯顿发发阿斯顿发发阿斯顿发发阿斯顿发发斯顿发发阿斯顿发发"
+        android:textSize="12sp"
+        android:textColor="#4455dd"
+        android:layout_marginStart="4dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

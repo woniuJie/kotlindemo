@@ -24,4 +24,12 @@
         <!-- The view should be only big enough to enclose its content (plus padding). -->
         <enum name="wrap_content" value="-2" />
     </attr>
+    <declare-styleable name="PostVideoHotIndicator">
+        <attr name="indicatorSelectColor" format="color" />
+        <attr name="indicatorUnSelectColor" format="color" />
+        <attr name="indicatorSelectHeight" format="dimension" />
+        <attr name="indicatorUnSelectHeight" format="dimension" />
+        <attr name="indicatorItemWidth" format="dimension" />
+        <attr name="indicatorItemMargin" format="dimension" />
+    </declare-styleable>
 </resources>

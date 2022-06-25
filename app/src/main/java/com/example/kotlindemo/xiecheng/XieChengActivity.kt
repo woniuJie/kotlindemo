@@ -2,10 +2,13 @@ package com.example.kotlindemo.xiecheng
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Looper
 import android.util.Log
 import android.view.View
+import android.widget.RelativeLayout
 import com.example.kotlindemo.R
 import com.example.kotlindemo.coroutineScopeMain
+import com.example.kotlindemo.loge
 import com.example.kotlindemo.toast
 import kotlinx.android.synthetic.main.activity_xie_cheng.*
 import kotlinx.coroutines.*
@@ -17,11 +20,21 @@ class XieChengActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        loge("onCreate 111--${System.currentTimeMillis()}")
 
         super.onCreate(savedInstanceState)
+        loge("onCreate 222--${System.currentTimeMillis()}")
+
         setContentView(R.layout.activity_xie_cheng)
+       loge("onCreate 333--${System.currentTimeMillis()}")
+
+        loge("oncrate 444--lp?.width:${iv_xiecheng?.height}")
 
         tv_xiecheng.setText("xxxxxxxx")
+
+        val layoutpara = tv_xiecheng.layoutParams as RelativeLayout.LayoutParams
+        layoutpara.width = 10
+        tv_xiecheng.layoutParams = layoutpara
 
         Log.e(TAG, "onCreate: 111")
         coroutineScopeMain.launch {
@@ -31,8 +44,12 @@ class XieChengActivity : AppCompatActivity() {
         Log.e(TAG, "onCreate: 444")
 
         GlobalScope.launch {
+            loge("当前线程1"+Thread.currentThread().name+"---"+(Looper.myLooper() == Looper.getMainLooper()))
+            CoroutineScope(Dispatchers.Main).launch {
+                loge("当前线程2"+Thread.currentThread().name+"---"+(Looper.myLooper() == Looper.getMainLooper()))
 
-
+            }
+            loge("当前线程3"+Thread.currentThread().name+"---"+(Looper.myLooper() == Looper.getMainLooper()))
         }
 
         CoroutineScope(Dispatchers.Main).launch {
@@ -101,6 +118,14 @@ class XieChengActivity : AppCompatActivity() {
             Log.e(TAG, "onCreate: async---${c}" )
         }
 
+    }
+
+    override fun onResume() {
+        loge("onResume 111--${System.currentTimeMillis()}")
+        super.onResume()
+        loge("onResume 222--${System.currentTimeMillis()}")
+
+        loge("onResume 444--lp?.width:${iv_xiecheng?.height}  ${iv_xiecheng?.measuredHeight}")
     }
 
     suspend fun add(a: Int, b: Int): Int {

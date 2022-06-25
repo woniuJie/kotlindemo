@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="96dp"
+    android:orientation="horizontal">
+
+    <com.example.kotlindemo.indicator.PostVideoHotIndicator4
+        android:id="@+id/indicator_video"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="#777777"
+        app:indicatorItemMargin="10dp"
+        app:indicatorItemWidth="6dp"
+        app:indicatorSelectHeight="12dp"
+        app:indicatorUnSelectHeight="6dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="5dp"
+        android:textColor="#00AB64"
+        android:textSize="11dp" />
+
+
+</LinearLayout>

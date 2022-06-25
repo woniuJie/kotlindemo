@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kotlindemo.touchevent.TouchEventViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/viewgroup_touchevent"
+    android:layout_height="match_parent"
+    android:background="#443333"
+    >
+
+<!--    <com.example.kotlindemo.touchevent.TouchEventViewGroup2-->
+<!--        android:id="@+id/viewgroup_touevent2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="400dp"-->
+<!--        android:background="#118833"-->
+<!--        />-->
+
+    <com.example.kotlindemo.touchevent.TouchEventChildView
+        android:id="@+id/childview_touchevent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#112233"
+        />
+
+
+</com.example.kotlindemo.touchevent.TouchEventViewGroup>

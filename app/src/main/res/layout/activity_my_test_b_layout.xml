@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.kotlindemo.transitionname.BeautyGestureLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_router"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_bbzsj"
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_maoboli"
+            android:scaleType="centerCrop"
+            />
+    </LinearLayout>
+
+</com.example.kotlindemo.transitionname.BeautyGestureLayout>
