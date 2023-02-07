@@ -3,7 +3,8 @@
     package="com.example.kotlindemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -89,6 +90,21 @@
         <activity android:name=".lifecycler.LifeCyclerDemoActitivy"/>
         <activity android:name=".rxjava.RxJavaDemoActitivy"/>
         <activity android:name=".indicator.IndicatorDemoActivity"/>
+        <activity android:name=".webview.WebViewActivity"/>
+        <activity android:name=".textview.MyTextDemoActivity"/>
+        <activity android:name=".clipchlidren.ClipChilderenActivity"/>
+        <activity android:name=".reflect.ReflectActivity"/>
+        <activity android:name=".motionlayout.MotionLayoutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".donghua.DonghuaActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent.DongHhua"
+            />
 
     </application>
 

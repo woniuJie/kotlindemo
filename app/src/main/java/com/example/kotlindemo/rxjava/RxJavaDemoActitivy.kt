@@ -30,7 +30,7 @@ class RxJavaDemoActitivy : AppCompatActivity() {
                 Observable.just(it+"xxxx")
             }.subscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe(observerA)
+            .subscribe(Consumer {  })
 
         Observable.create(object :  ObservableOnSubscribe<Any> {
             override fun subscribe(emitter: ObservableEmitter<Any>) {

@@ -22,7 +22,7 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="我是一饿饿饿讷讷个饿我是一饿饿饿讷讷个饿饿饿讷我是一饿饿饿讷讷个饿饿饿讷饿饿讷" />
+        tools:text="我是一饿饿饿饿讷我是一讷" />
 
     <ImageView
         android:id="@+id/iv_consultant_card"

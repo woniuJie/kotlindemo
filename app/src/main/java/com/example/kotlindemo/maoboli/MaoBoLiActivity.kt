@@ -29,20 +29,24 @@ class MaoBoLiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mao_bo_li)
 
-        Glide.with(this)
-            .asBitmap()
-            .load("https://img2.soyoung.com/user/20220118/4/29155181295c6f5ee2b51c5ed6c1ffea_100_100.jpg")
-            .into(object : SimpleTarget<Bitmap?>() {
-                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap?>?) {
-                    Blurry.with(this@MaoBoLiActivity)
-                        .sampling(2)
-                        .radius(4)
-                        .async()
-                        .color(Color.parseColor("#99000000"))
-                        .from(resource)
-                        .into(iv_img)
-                }
-            })
+//        Glide.with(this)
+//            .asBitmap()
+//            .load("https://img2.soyoung.com/user/20220118/4/29155181295c6f5ee2b51c5ed6c1ffea_100_100.jpg")
+//            .into(object : SimpleTarget<Bitmap?>() {
+//                override fun onResourceReady(resource: Bitmap, transition: Transition<in Bitmap?>?) {
+//                    Blurry.with(this@MaoBoLiActivity)
+//                        .sampling(2)
+//                        .radius(4)
+//                        .async()
+//                        .color(Color.parseColor("#99000000"))
+//                        .from(resource)
+//                        .into(iv_img)
+//                }
+//            })
+
+//        Glide.with(this)
+//            .load("https://img2.soyoung.com/origin/20220511/7/b59b85f3c7a966d1a17dc36d22700722.png")
+//            .into(iv_image2)
 
 
     }

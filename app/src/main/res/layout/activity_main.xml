@@ -16,7 +16,41 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onDongHuaDemo"
+                android:text="动画" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onMotionLayoutDemo"
+                android:text="motionlayout" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onRefelctDemo"
+                android:text="反射" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClipChild"
+                android:text="onClipChild" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onTextViewDemo"
+                android:text="textview 渐变" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onWebViewDemo"
+                android:text="webview" />
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

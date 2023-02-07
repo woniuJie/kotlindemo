@@ -12,22 +12,44 @@
     <ImageView
         android:id="@+id/iv_img"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-<!--    <com.example.kotlindemo.maoboli.blur.RealtimeBlurView-->
-<!--        android:id="@+id/blurLayout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        app:layout_constraintBottom_toBottomOf="@id/iv_img"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/iv_img"-->
-<!--        app:layout_constraintStart_toStartOf="@id/iv_img"-->
-<!--        app:realtimeBlurRadius="45dp"-->
-<!--        app:realtimeOverlayColor="#99000000" />-->
+    <ImageView
+        android:id="@+id/iv_image2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/iv_img"
+        android:layout_marginTop="100dp"
+        android:background="#00AB84"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热门阿拉丁放假了"
+        app:layout_constraintTop_toTopOf="@id/iv_image2"
+        app:layout_constraintEnd_toEndOf="@id/iv_image2"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        />
+
+
+    <com.example.kotlindemo.maoboli.blur.RealtimeBlurView
+        android:id="@+id/blurLayout"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:alpha="0.7"
+        app:layout_constraintTop_toBottomOf="@id/iv_img"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="@id/iv_image2"
+        app:realtimeBlurRadius="10dp"
+        app:realtimeOverlayColor="#00000000" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

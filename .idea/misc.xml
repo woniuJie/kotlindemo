@@ -6,10 +6,14 @@
         <entry key="app/src/main/res/drawable/shape_item_post_video_hot.xml" value="0.2916666666666667" />
         <entry key="app/src/main/res/drawable/shape_item_post_video_hot_select.xml" value="0.30648148148148147" />
         <entry key="app/src/main/res/drawable/shape_new_user_progress_bg.xml" value="0.26614583333333336" />
+        <entry key="app/src/main/res/drawable/shape_welfare_new_user_coupon_bottom_bg.xml" value="0.128" />
         <entry key="app/src/main/res/drawable/white_pure_top_radius8_bg.xml" value="0.3071794871794872" />
+        <entry key="app/src/main/res/layout/actiivty_motion_layout.xml" value="0.2786458333333333" />
         <entry key="app/src/main/res/layout/activity_async.xml" value="0.1281661600810537" />
         <entry key="app/src/main/res/layout/activity_bring_to_front_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_clip_children_layout.xml" value="0.348731884057971" />
         <entry key="app/src/main/res/layout/activity_dialog_layout.xml" value="0.21422101449275363" />
+        <entry key="app/src/main/res/layout/activity_donghua_layout.xml" value="0.34103260869565216" />
         <entry key="app/src/main/res/layout/activity_douyin_aactivity.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_douyin_bactivity.xml" value="0.19895833333333332" />
         <entry key="app/src/main/res/layout/activity_event.xml" value="0.2169230769230769" />
@@ -19,9 +23,11 @@
         <entry key="app/src/main/res/layout/activity_mao_bo_li.xml" value="0.3514689880304679" />
         <entry key="app/src/main/res/layout/activity_my_test_a_layout.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_my_test_b_layout.xml" value="0.1875" />
+        <entry key="app/src/main/res/layout/activity_my_text_demo_layout.xml" value="0.325" />
         <entry key="app/src/main/res/layout/activity_o_o_m.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activity_pile.xml" value="0.10235507246376811" />
         <entry key="app/src/main/res/layout/activity_pull_demo1.xml" value="0.17850525015441632" />
+        <entry key="app/src/main/res/layout/activity_reflect_layout.xml" value="0.40260416666666665" />
         <entry key="app/src/main/res/layout/activity_rxjava_demo_layout.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/activity_shouyw_layout.xml" value="0.28229166666666666" />
@@ -33,6 +39,7 @@
         <entry key="app/src/main/res/layout/activity_view_demo_layout.xml" value="0.22552083333333334" />
         <entry key="app/src/main/res/layout/activity_view_pager.xml" value="0.17798913043478262" />
         <entry key="app/src/main/res/layout/activity_viewpager2_layout.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_webview_layout.xml" value="0.2318840579710145" />
         <entry key="app/src/main/res/layout/activity_weiyi_layout.xml" value="0.25729166666666664" />
         <entry key="app/src/main/res/layout/activity_xie_cheng.xml" value="0.10235507246376811" />
         <entry key="app/src/main/res/layout/activity_xie_cheng2.xml" value="0.14635416666666667" />
@@ -47,6 +54,8 @@
         <entry key="app/src/main/res/layout/item_hhh.xml" value="0.20364583333333333" />
         <entry key="app/src/main/res/layout/item_post_video_hot_indicator_layout.xml" value="1.0" />
         <entry key="app/src/main/res/layout/item_progress_layout.xml" value="0.10235507246376811" />
+        <entry key="app/src/main/res/layout/item_sub_bottom_bar_layout.xml" value="0.348731884057971" />
+        <entry key="app/src/main/res/layout/item_sub_bottom_bar_layout2.xml" value="0.348731884057971" />
         <entry key="app/src/main/res/layout/item_viewpager_layout.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/layout_multi_tab_item.xml" value="0.2578125" />
         <entry key="app/src/main/res/layout/medical_activity_main.xml" value="0.23324275362318841" />

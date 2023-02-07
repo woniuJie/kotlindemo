@@ -1,37 +1,38 @@
 package com.example.kotlindemo
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.os.Handler
-import android.os.HandlerThread
 import android.text.TextUtils
 import android.util.Log
-import android.view.FrameMetrics
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.kotlindemo.async.AsyncActivity
-import com.example.kotlindemo.bringtofront.BringToFrontActivity
-import com.example.kotlindemo.bringtofront.LineRightActivity
 import com.example.kotlindemo.click.ClickActivity
+import com.example.kotlindemo.clipchlidren.ClipChilderenActivity
 import com.example.kotlindemo.countdowntime.CountDownTimeActivity
 import com.example.kotlindemo.dialog.DialogActivity
 import com.example.kotlindemo.dianzan.DianzanActivity
+import com.example.kotlindemo.donghua.DonghuaActivity
 import com.example.kotlindemo.edittext.EditTextActivity
 import com.example.kotlindemo.event.EventActivity
 import com.example.kotlindemo.extend.GaoJieActivity
 import com.example.kotlindemo.extend.funa
 import com.example.kotlindemo.extend.funb
+import com.example.kotlindemo.flexible.PullDemo1Activity
 import com.example.kotlindemo.glide.GlideActivity
+import com.example.kotlindemo.indicator.IndicatorDemoActivity
+import com.example.kotlindemo.lifecycler.LifeCyclerDemoActitivy
 import com.example.kotlindemo.maoboli.MaoBoLiActivity
+import com.example.kotlindemo.motionlayout.MotionLayoutActivity
 import com.example.kotlindemo.network.DemoActivity
 import com.example.kotlindemo.oom.OOMActivity
 import com.example.kotlindemo.pile.PileActivity
-import com.example.kotlindemo.flexible.PullDemo1Activity
-import com.example.kotlindemo.indicator.IndicatorDemoActivity
-import com.example.kotlindemo.lifecycler.LifeCyclerDemoActitivy
+import com.example.kotlindemo.reflect.ReflectActivity
 import com.example.kotlindemo.rxjava.RxJavaDemoActitivy
 import com.example.kotlindemo.shouye.WeiYiActivity
 import com.example.kotlindemo.spannable.SpannableStringActivity
+import com.example.kotlindemo.textview.MyTextDemoActivity
 import com.example.kotlindemo.touchevent.TouchEventActivity
 import com.example.kotlindemo.touxiang.TouXiangLunBoActivity
 import com.example.kotlindemo.transitionname.DouYinAActivity
@@ -39,10 +40,10 @@ import com.example.kotlindemo.transitionname.MyTestAActivity
 import com.example.kotlindemo.transitionname.TransitionAActivity
 import com.example.kotlindemo.view.ViewDemoActivity
 import com.example.kotlindemo.viewpager.ViewPagerActivity
+import com.example.kotlindemo.webview.WebViewActivity
 import com.example.kotlindemo.xiecheng.XieCheng2Activity
 import com.example.kotlindemo.xiecheng.XieChengActivity
 import com.example.kotlindemo.zhengze.ZhengZeActivity
-import com.example.myaarlibrary.AarActivity
 import java.text.DecimalFormat
 import java.util.*
 import java.util.regex.Matcher
@@ -119,6 +120,11 @@ class MainActivity : AppCompatActivity() {
         list111.forEach {
             loge("mylist $it")
         }
+
+        val xx = "2"
+
+        loge((Int)xx)
+
 
     }
 
@@ -237,9 +243,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onAarTrunClick(view: View) {
-        Intent(this, AarActivity::class.java).run {
-            startActivity(this)
-        }
+//        Intent(this, AarActivity::class.java).run {
+//            startActivity(this)
+//        }
     }
 
     fun onGaoJie(view: View) {
@@ -331,6 +337,45 @@ class MainActivity : AppCompatActivity() {
 
     fun onIndicatorDemo(view: View) {
         Intent(this, IndicatorDemoActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+    fun onWebViewDemo(view: View) {
+        Intent(this, WebViewActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+
+    fun onTextViewDemo(view: View) {
+        Intent(this, MyTextDemoActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+
+    fun onClipChild(view: View) {
+        Intent(this, ClipChilderenActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+
+    fun onRefelctDemo(view: View) {
+//        Intent(this, ReflectActivity::class.java).run {
+//            startActivity(this)
+//        }
+        val intent = Intent(
+            Intent.ACTION_VIEW,
+            Uri.parse("app.soyoung://main/main")
+        )
+        startActivity(intent)
+    }
+
+    fun onMotionLayoutDemo(view: View) {
+        Intent(this, MotionLayoutActivity::class.java).run {
+            startActivity(this)
+        }
+    }
+    fun onDongHuaDemo(view: View) {
+        Intent(this, DonghuaActivity::class.java).run {
             startActivity(this)
         }
     }

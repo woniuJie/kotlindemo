@@ -1,2 +1,2 @@
-include ':app'
+include ':app',':animplayer'
 rootProject.name = "KotlinDemo"
